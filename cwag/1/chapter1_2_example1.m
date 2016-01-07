@@ -44,3 +44,14 @@ annotation( 'textarrow', x, y, 'String', ' x=0.5 y=-2.25 ', 'Color', 'Red');
 x = [ 0.184, 0.2 ]
 y = [ 0.255, 0.215 ];
 annotation( 'textarrow', x, y, 'String', ' y=-2.25 ', 'Color', 'Blue');
+
+x = [ 0.22, 0.154 ]
+y = [ 0.85, 0.80 ];
+annotation( 'textarrow', x, y, 'String', ' y = x^2 - x - 2 ');
+
+x = [ 0.575, 0.481 ]
+y = [ 0.35, 0.235 ];
+annotation( 'textarrow', x, y, 'String', ' ( -1, 0 ), ( 2, 0 ) ');
+x = [ 0.575, 0.59 ]
+y = [ 0.35, 0.235 ];
+annotation( 'textarrow', x, y, 'String', '');
