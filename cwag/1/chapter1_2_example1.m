@@ -55,3 +55,7 @@ annotation( 'textarrow', x, y, 'String', ' ( -1, 0 ), ( 2, 0 ) ');
 x = [ 0.575, 0.59 ]
 y = [ 0.35, 0.235 ];
 annotation( 'textarrow', x, y, 'String', '');
+
+x = [ 0.47, 0.535 ]
+y = [ 0.85, 0.815 ];
+annotation( 'textarrow', x, y, 'String', ' x=0.5', 'Color', 'Red');
