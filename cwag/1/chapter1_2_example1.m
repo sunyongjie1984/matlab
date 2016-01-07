@@ -31,8 +31,16 @@ hold on;
 xlim = get(gca, 'Xlim')
 plot( xlim, [ -2.25, -2.25 ], 'm--' );
 hold on;
-annotation('arrow', [0.5, 0.5], [0.6, 0.6], 'LineStyle','-','color',[ 1 0 0 ]);
-text( 0.5, -3.5, ' (0.5, -2.25) ');
-hold on;
+% annotation('arrow', [0.45, 0.538], [0.35, 0.2], 'LineStyle','-','color',[ 1 0 0 ]);
+% text( 0.5, -3.5, ' (0.5, -2.25) ');
+% hold on;
+% dim = [.3 .68 .2 .2 ];
+% annotation('rectangle', dim, 'Color', 'red');
 
+x = [ 0.47, 0.535 ]
+y = [ 0.35, 0.215 ];
+annotation( 'textarrow', x, y, 'String', ' x=0.5 y=-2.25 ', 'Color', 'Red');
 
+x = [ 0.184, 0.2 ]
+y = [ 0.255, 0.215 ];
+annotation( 'textarrow', x, y, 'String', ' y=-2.25 ', 'Color', 'Blue');
