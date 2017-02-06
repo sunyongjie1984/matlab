@@ -9,8 +9,6 @@ dataBaseName = 'orcl';
 conn = database(dataBaseName, userName, password, driver, dataBaseUrl);
 ping(conn) %ping(conn)
 sqlquery = 'select * from wkhistorydata where id <= 100 order by id';
-sqlquery = 'select * from wkhistorydata order by id';
-
 curs = exec(conn, sqlquery);
 curs = fetch(curs); % all data
 
@@ -37,11 +35,10 @@ for i = 10 : mOri
     avgTen(i, 4) = avgTen(i, 4) / 10;
 end
 
+avgTen
+%avgTen(1 : 10, :) = []
 
-avgTen(1 : 9, :) = [] % delete the first 9 line
+a = avgTen(:, 2 : 4)
 
-a = avgTen(:, 2 : 4) % delete the first row
-
-plot(a); %draw prePrice avgFive avgTen together
-
+plot(a);
 close(conn);
