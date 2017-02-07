@@ -9,7 +9,7 @@ dataBaseName = 'orcl';
 conn = database(dataBaseName, userName, password, driver, dataBaseUrl);
 ping(conn) %ping(conn)
 sqlquery = 'select * from wkhistorydata where id <= 100 order by id';
-sqlquery = 'select * from wkhistorydata order by id';
+%sqlquery = 'select * from wkhistorydata order by id';
 
 curs = exec(conn, sqlquery);
 curs = fetch(curs); % all data
