@@ -1,0 +1,10 @@
+[x,y]=meshgrid(-5:0.5:5);
+z=x.^2-y.^2;
+subplot(2,2,1)
+mesh(x,y,z)
+subplot(2,2,2)
+surfc(x,y,z)
+subplot(2,2,3)
+meshc(x,y,z)
+subplot(2,2,4)
+meshz(x,y,z)
