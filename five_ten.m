@@ -1,7 +1,7 @@
 clc;
 %five_ten.m
 % five ten 
-dataBaseUrl = 'jdbc:oracle:thin:@192.168.0.113:1521:';
+dataBaseUrl = 'jdbc:oracle:thin:@192.168.0.137:1521:';
 driver = 'oracle.jdbc.driver.OracleDriver';
 userName = 'scott';
 password = 'tiger';
