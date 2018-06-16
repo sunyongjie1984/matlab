@@ -1,3 +1,0 @@
-w = [ -1 ; 2 ] % define column vec
-v = [ 4  ; 2 ]
-k = dot( w , v )
