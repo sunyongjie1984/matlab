@@ -8,25 +8,40 @@ v + w
 
 
 quiver( 0, 0, -1, 2, 1)
-text( -0.5, 1, '\fontsize{18} w = ( -1, 2 ) ' );
+text( -0.5, 1, '  w = ( -1, 2 ) ' );
 
 hold
 quiver( 0, 0, 4, 2, 1 )
-text( 2, 1, '\fontsize{18} v = ( 4, 2 ) ');
+text( 2, 1, '  v = ( 4, 2 ) ');
 
 quiver( 0, 0, 3, 4, 1 )
-text( 1.5, 2, '\fontsize{18} ( v + w ) = ( 3, 4 )');
+text( 1.5, 2, '  ( v + w ) = ( 3, 4 )');
+% text( 1.5, 2, '\fontsize{18} ( v + w ) = ( 3, 4 )');
 
 quiver( 0, 0, 5, 0, 1 )
-text( 2.5, 0.1, '\fontsize{18} ( v + ( -w ) ) = ( 5, 0 )');
+text( 2.5, 0.1, '  ( v + ( -w ) ) = ( 5, 0 )');
+
+
+quiver( 4, 2, -1, 2, 1, '--' )
+text( 3.5, 3, '  w ');
 
 
 quiver( -1, 2, 4, 2, 1, '--' )
-text( 1, 3, '\fontsize{18} v ');
+text( 1, 3, '  v ');
 
-title('The title you want to add to the graph.');
+quiver( 0, 0, 1, -2, 1, '--' )
+text( 0.5, -1, '  -w ');
+
+quiver( 4, 2, 1, -2, 1, '--' )
+text( 4.5, 1, '  -w ');
+
+quiver( 1, -2, 4, 2, 1, '--' )
+text( 3, -1, '  v ');
+
+title({'Figure 1.1: Vector addition v + w = ( 3, 4 ) produces the diagonal of a parallelogram.';...
+    'The reverse of w is -w. The linear combination on the right is v - w = ( 5, 0 ).'},'FontSize',12);
 xlabel('x'); ylabel('y');
-legend(' w ', ' v ', ' v + w ', ' v + ( -w ) ' )  
+legend(' w ', ' v ', ' v + w ', ' v + ( -w ) ', ' w ', ' v ', ' -w ', ' -w ', ' v ' )  
      
 
 % t=[0,2,4,6,8];
