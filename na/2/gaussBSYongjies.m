@@ -6,7 +6,7 @@ n = rowSize;
 x = c;
 
 for i = n : -1 : 1
-    for j = i + 1 : n
+    for j = i + 1 : 1 : n
         U( i ) = U( i ) - U( i, j ) * x( j );
     end
     x( i ) = c( i ) / U( i, i );
