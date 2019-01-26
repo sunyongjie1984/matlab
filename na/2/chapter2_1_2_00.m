@@ -1,6 +1,7 @@
 A = [ 1 2 -1; 2 1 -2; -3 1 1; ]
 b = [ 3; 3; -6 ]
+[ A b ] % augmented matrix
 
-[ U, c ] = gaussEYongjies( A, b, 3 )
+[ U, c ] = gaussEYongjies( A, b )
 
-augmentedA = [ U c ]
+[ U c ] % new augmented matrix
