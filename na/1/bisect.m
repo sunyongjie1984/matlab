@@ -11,7 +11,9 @@ fa=f(a);
 fb=f(b);
 k = 0;
 while (b-a)/2>tol
-  c=(a+b)/2;
+  c=(a+b)/2 % print the result of every loop
+  %c=(a+b)/2;
+
   fc=f(c);
   if fc == 0              %c is a solution, done
     break
