@@ -5,3 +5,5 @@ b = [ 3; 3; -6 ]
 [ U, c ] = gaussEYongjies( A, b )
 
 [ U c ] % new augmented matrix
+
+x = gaussBSYongjies( U, c )
