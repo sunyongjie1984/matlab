@@ -8,7 +8,11 @@ function xc = fpi( g, x0, k )
 
 x( 1 ) = x0;
 for i = 1 : k
-  x( i + 1 ) =g( x( i ) );
+  x( i + 1 ) = g( x( i ) );
+end
+
+if k < 31
+    x % print x, the size of x is 11
 end
 
 xc = x( k + 1 );
