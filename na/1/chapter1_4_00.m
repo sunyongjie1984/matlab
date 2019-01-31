@@ -1,15 +1,10 @@
-syms x
-%g = @ ( x ) cos( x )
-% g = @ ( x ) ( x.^2)
-% f = @ ( x ) diff( g(x) )
-% k = diff(g)
-% pretty(ans)
-% g (3 )
-% A = [ 1 2 3; 2 3 4; 3 4 5; ]
-% f ( 3)
 
 % iteration steps 10
-%xc = nrm( g, 0, 10 ) 
+g = @( x ) x .^ 3 + x - 1
+k = matlabFunction(diff(g(x)))
+xc = nrm( g, k, 0.5, 10 ) 
+
+%xc = nrm( g, pi / 3, 10 ) 
 % x = [ 1 3 5 ]
 % f = x.^2
 % g = diff(f)
@@ -17,8 +12,8 @@ syms x
 % kk = 2
 % g( kk )
 
-f = @computeSquare;
-
-m = integral(f, 0, 1)
-n = matlabFunction(diff(f(x)))
-n( 11 )
+% f = @computeSquare;
+% % 
+% %m = integral(f, 0, 1)
+% n = matlabFunction(diff(f(x)))
+% n( 11 )
