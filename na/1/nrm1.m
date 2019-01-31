@@ -9,7 +9,7 @@ syms x
 
 g = matlabFunction(diff(f(x)))
 
-x = f( x0 )
+x = x0
 for i = 1 : k
     x( i + 1 ) = x( i ) - f( x( i ) ) ./ g( x( i ) )
 end

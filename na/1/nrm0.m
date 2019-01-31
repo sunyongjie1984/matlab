@@ -4,7 +4,7 @@ function [ xc ] = nrm0( f, g, x0, k )
 disp( 'function nrm0: ' );
 % function nrm0 dont need this line
 %syms x
-x = f( x0 )
+x = x0
 for i = 1 : k
     x( i + 1 ) = x( i ) - f( x( i ) ) ./ g( x( i ) )
 end
