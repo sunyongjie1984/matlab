@@ -3,13 +3,13 @@
 %Input: inline function f; a,b such that f(a)*f(b)<0, 
 %     and tolerance tol
 %Output: Approximate solution xc
-function xc = bisect(f,a,b,tol)
-if sign(f(a))*sign(f(b)) >= 0
-  error('f(a)f(b)<0 not satisfied!') %ceases execution
+function xc = bisect( f, a, b, tol )
+if sign( f( a ) ) * sign( f( b) ) >= 0
+  error( 'f(a)f(b)<0 not satisfied!' ) %ceases execution
 end
-fa=f(a);
-fb=f(b);
-k = 0;
+fa = f( a );
+fb = f( b );
+
 while (b-a)/2>tol
   c=(a+b)/2 % print the result of every loop
   %c=(a+b)/2;
