@@ -35,7 +35,7 @@ while (b-a)/2>tol
 nn = [ 0.55, 0.835 ]
 mm = [ 0.35 + k, 0.715 ];
 k = k + 1
-str = sprintf('%.10f', c);
+str = sprintf('%d   %.10f', k, c);
   %annotation( 'textarrow', nn, mm, 'String', str, 'Color', 'Red');
   text( 0.1, 0.9 - 0.05 .* k, str )
 
