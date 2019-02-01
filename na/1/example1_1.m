@@ -49,6 +49,6 @@ t = 0.00005 % different precision
 %root = bisect( f, startPos, endPos, t )
 
 
-%root = bisectYongjies( f, startPos, endPos, t )
-root = bisectYongjies( f, -100000, 100000, t )
+root = bisectYongjies( f, startPos, endPos, t )
+%root = bisectYongjies( f, -10000, 1000000, t )
 
