@@ -1,3 +1,4 @@
+format long
 x = [ 0.0: 0.01: 1.00 ];
 
 y = x.^3 + x - 1;
@@ -40,12 +41,12 @@ startPos = 0.0
 endPos = 1.0
 t = 0.001
 
-root = bisect( f, startPos, endPos, t )
+%root = bisect( f, startPos, endPos, t )
 %input('press any key to continue');
 
 
 t = 0.00005 % different precision
-root = bisect( f, startPos, endPos, t )
+%root = bisect( f, startPos, endPos, t )
 
 
 root = bisectYongjies( f, startPos, endPos, t )

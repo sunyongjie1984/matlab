@@ -31,6 +31,7 @@ while (b-a)/2>tol
   if fc == 0              %c is a solution, done
     break
   end
+  c
   plot(c,0,'*'), pause(1) %darw new point in x axis
    set(gcf,'color','w')                                % set back ground white
 
@@ -40,6 +41,7 @@ while (b-a)/2>tol
     a=c;fa=fc;
   end
 end
+c
 plot(c,0,'*'), pause(1) %darw new point in x axis
 set(gcf,'color','w')                                % set back ground white
 
