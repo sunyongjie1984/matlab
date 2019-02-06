@@ -1,3 +1,4 @@
+% find a root of the function f(x) = x .^ 3 + x -1 by using bisection method on the interval [ 0, 1 ]
 format long
 x = [ 0.0: 0.01: 1.00 ];
 
