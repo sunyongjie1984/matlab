@@ -1,9 +1,9 @@
 %
 %clf,fplot('x.^3+10*x.^2-2*sin(x)-50',[-12, 5])
-clf,fplot('x.^2-x-2',[-10, 10], 'm-o' )
+clf, fplot('x.^2-x-2',[-10, 10], 'm--' )
 
 hold on,grid
-x0=input(' x0= x0 can be 1000 or -300 ');e=1;
+x0=input(' x0= ,x0 can be 1000 or -300 ');e=1;
 while e>0.00001
    f= x0.^2-x0-2; % solve f(x0)
    g= 2.*x0 - 1; % solve derivative g(x0)
