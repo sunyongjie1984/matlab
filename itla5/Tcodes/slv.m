@@ -35,4 +35,5 @@ for k = n:-1:1
    end
    x(k) = (c(k) - t) / U(k, k);
 end
+% dont know why run this line??
 x = x';
