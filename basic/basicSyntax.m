@@ -17,3 +17,8 @@ column3 = E3(:,3)
 % Ax=b when b is column3 wich if the 3rd column of eye(3)
 % x is inv( A ) acts on column3
 x = inv( A ) * column3
+
+
+M = [ 4; pi ]
+M = [ 4 pi; ]'
+M = [ 4, pi ]'

@@ -8,3 +8,4 @@ b = [ 2 8 10; ]
 % call slu in the function slv
 x = slv( A, b );
 x = x'
+
