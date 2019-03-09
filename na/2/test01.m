@@ -1,11 +1,11 @@
 clear; clc
 format long;
-x0 = [ 1 2 ]   % initial guess
+x0 = [ 1 2 ]'   % initial guess
 eps = 0.000001;  % precision
 for i = 1 : 10
     f = double( subs( fun( x0 ), { 'x1' 'x2' }, { x0( 1 ) x0( 2 ) } ) );
     df = double( subs( dfun( x0 ), { 'x1' 'x2' }, { x0( 1 ) x0( 2 ) } ) ); % get jacobi matrix
-    x = x0 - f / df
+    x = x0 - df \ f
     if( abs( x - x0 ) < eps )
         break;
     end
