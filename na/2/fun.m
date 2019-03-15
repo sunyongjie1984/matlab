@@ -1,10 +1,13 @@
-function f = fun( x );
+function f = fun( );
 % define non linear equations
-% define x1 x2
+% define u v
 % function f1 f2
-syms x1 x2
+% define two synbols
+syms u v
 
-f1 = x2 - x1 ^ 3;
-f2 = x1 ^ 2 + x2 ^ 2 -1;
+% define expression
+% define function
+f1 = - u ^ 3 + v;
+f2 = u ^ 2 + v ^ 2 -1;
 
 f = [ f1;f2 ];
