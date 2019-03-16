@@ -1,12 +1,13 @@
 function [ xc ] = nrm0( f, g, x0, k )
-%NRM Summary of this function goes here
-%   Detailed explanation goes here
-disp( 'function nrm0: ' );
-% function nrm0 dont need this line
-%syms x
-x = x0
+
+disp( 'enter function nrm0: ' );
+% define one column vector with all zeros of k components
+x = zeros( k + 1, 1 );
+x( 1 ) = x0;
 for i = 1 : k
-    x( i + 1 ) = x( i ) - f( x( i ) ) ./ g( x( i ) )
+    x( i + 1 ) = x( i ) - f( x( i ) ) / g( x( i ) );
 end
+display( x ) % print all x components
 xc = x( k + 1 );
+
 
