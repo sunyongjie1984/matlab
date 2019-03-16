@@ -8,7 +8,7 @@ g0 = matlabFunction(diff(f(x)))
 xc = nrm0( f, g0, -0.7, 10 ) 
 
 % cal nrm1
-xc = nrm1( f, -0.7, 10 ) 
+%xc = nrm1( f, -0.7, 10 ) 
 
 % cal nrmYongjies02
 xc = nrmYongjies02( f, 0.7, 10 )
