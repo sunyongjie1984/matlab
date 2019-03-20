@@ -1,4 +1,5 @@
 function [ xc ] = nrmYongjies02( f, x0, k )
+pauseTime = 3;
 clf, fplot( f, [ -0.8, 1 ], 'linewidth', 2, '-')
 hold on  grid
 
@@ -23,17 +24,17 @@ for i = 1 : k
         x( i ) = x( i - 1 ) - f( x( i - 1 ) ) / g( x( i - 1 ) )
     end
     str = sprintf('%.15f  %d', x( i ), i)
-    text( 0.1, 0.9 - 0.05 * i, str ), pause( 2 )
-    plot( x( i ), 0, '*' ), pause( 2 )
+    text( 0.1, 0.9 - 0.05 * i, str ), pause( pauseTime )
+    plot( x( i ), 0, '*' ), pause( pauseTime )
     if i < 50
         str = sprintf( '%.7f %d', x( i ), i );
-        text( x( i ), 0.000, str ), pause( 2 )
+        text( x( i ), 0.000, str ), pause( pauseTime )
     end
-    plot( [x( i), x(i)], [0, f(x(i))], 'r'); hold on, pause( 2 )
-    plot( x( i ), f( x( i ) ), '*' ), pause( 2 )
+    plot( [x( i), x(i)], [0, f(x(i))], 'r'); hold on, pause( pauseTime )
+    plot( x( i ), f( x( i ) ), '*' ), pause( pauseTime )
     if i < 50
         str = sprintf( '%.4f %.15f %d', x( i ), eval( f( x( i ) ) ), i );
-        text( x( i ), eval( f( x( i ) ) ), str ), pause( 2 )
+        text( x( i ), eval( f( x( i ) ) ), str ), pause( pauseTime )
     end
     set( gcf, 'color', 'w' ) % set back ground white
     m = g( x( i ) );
@@ -51,7 +52,7 @@ for i = 1 : k
     end
 
     if i < 100 % draw all the tangent lines
-        fplot( q, [ a , b ], 'm--' ), hold on, pause( 2 );
+        fplot( q, [ a - 0.05 , b + 0.05 ], 'm--' ), hold on, pause( pauseTime );
 
     end
 end

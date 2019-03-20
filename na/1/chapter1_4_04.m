@@ -5,5 +5,5 @@ clc;
 f( x ) = x .^ 3 + x - 1
 
 % % % cal nrmYongjies02
-xc = nrmYongjies02( f, -0.7, 6 )
+xc = nrmYongjies02( f, -0.7, 4 )
 
